@@ -2,6 +2,6 @@ kind: StorageClass
 apiVersion: storage.k8s.io/v1
 metadata:
   name: mongo-db-sc
-  namespace: test-mongo-db-ns
+  namespace: mongo-db-ns
 provisioner: ebs.csi.aws.com
 volumeBindingMode: WaitForFirstConsumer

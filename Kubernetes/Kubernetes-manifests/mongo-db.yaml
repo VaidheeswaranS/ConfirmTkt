@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata: 
   name: mongo-db
-  namespace: test-mongo-db-ns
+  namespace: mongo-db-ns
   labels:
     app: mongo-db
 spec: 

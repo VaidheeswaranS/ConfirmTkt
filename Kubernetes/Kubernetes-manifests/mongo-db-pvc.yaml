@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mongo-db-claim
-  namespace: test-mongo-db-ns
+  namespace: mongo-db-ns
 spec:
   accessModes:
     - ReadWriteOnce
