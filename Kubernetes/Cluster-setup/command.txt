@@ -3,8 +3,8 @@ eksctl create cluster \
 --name my-cluster \
 --region eu-west-2 \
 --version 1.21 \
---nodegroup-name my-worker-nodes
+--nodegroup-name my-worker-nodes \
 --node-type t2.2xlarge \
---nodes 2
+--nodes 2 \
 --ssh-access \
 --ssh-public-key london
