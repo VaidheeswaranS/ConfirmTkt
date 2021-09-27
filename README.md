@@ -40,7 +40,16 @@ Wait for 15-20 mins for the cluster to be completely active
 
 - Create a kubernetes namespace object named `mongo-db-ns` to have all our deployments related to mongodb to be present within this namespace for isolation
 
+```
+kubectl create ns mongo-db-ns
+```
+
 - Create a kubernetes secret object named `mongo-db-secret` inside the `mongo-db-ns` namespace to store the mongodb initial root username and password
+
+```
+kubectl create secret generic mongo-db-secret --from-literal=mongo-db-root-username=<your-username> \
+--from-literal=mongo-db-root-password=<your-password> -n mongo-db-ns
+```
 
 - Finally run the deployment manifest files present inside the folder **Kubernetes -> Kubernetes-manifests** in the below following order
 
